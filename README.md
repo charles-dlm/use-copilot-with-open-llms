@@ -6,7 +6,7 @@ At the time of writing, the only limitation I have encountered is a rate limit o
 
 ---
 
-# Prerequisites
+## Prerequisites
 
 Before getting started, make sure you have:
 
@@ -17,7 +17,7 @@ Before getting started, make sure you have:
 
 ---
 
-# Step 1 – Install or Update Visual Studio Code
+## Step 1 – Install or Update Visual Studio Code
 
 If you do not already have Visual Studio Code installed, download it from Microsoft's official website:
 
@@ -35,7 +35,7 @@ To check for updates:
 
 ---
 
-# Step 2 – Sign In
+## Step 2 – Sign In
 
 Sign in to Visual Studio Code using your Microsoft or GitHub account.
 
@@ -45,7 +45,7 @@ A signed-in account is required in order to use **GitHub Copilot Chat** with cus
 
 ---
 
-# Step 3 – Generate a Free NVIDIA API Key
+## Step 3 – Generate a Free NVIDIA API Key
 
 Go to:
 
@@ -53,7 +53,7 @@ https://build.nvidia.com/models
 
 This website provides free API access to many open-source language models.
 
-## Choose a model
+### Choose a model
 
 Browse the available models and select the one that best fits your needs.
 
@@ -86,7 +86,7 @@ api_key
 
 ---
 
-# Step 4 – Add the Model to Visual Studio Code
+## Step 4 – Add the Model to Visual Studio Code
 
 Open Visual Studio Code.
 
@@ -121,7 +121,7 @@ VS Code will then automatically open a JSON configuration file.
 
 ---
 
-# Step 5 – Configure the JSON File
+## Step 5 – Configure the JSON File
 
 Inside the generated JSON file, you only need to modify the following fields:
 
@@ -129,7 +129,7 @@ Inside the generated JSON file, you only need to modify the following fields:
 - `name`
 - `url`
 
-## `id`
+### `id`
 
 The model identifier can be found on the NVIDIA model page.
 
@@ -147,7 +147,7 @@ Example:
 "id": "deepseek-ai/deepseek-v4-pro"
 ```
 
-## `name`
+### `name`
 
 This field is only used for display purposes inside VS Code.
 
@@ -159,7 +159,7 @@ Example:
 "name": "DeepSeek V4 Pro"
 ```
 
-## `url`
+### `url`
 
 For most NVIDIA models, the endpoint is:
 
@@ -169,7 +169,7 @@ https://integrate.api.nvidia.com/v1
 
 ---
 
-# Step 6 – Start Using Your Model
+## Step 6 – Start Using Your Model
 
 Open the Command Palette again:
 
@@ -195,9 +195,9 @@ Your NVIDIA-hosted model should now be available and ready to use inside GitHub 
 
 ---
 
-# Troubleshooting
+## Troubleshooting
 
-## My model does not appear
+### My model does not appear
 
 If your model is not listed:
 
@@ -209,7 +209,7 @@ VS Code may require a restart before newly added custom models become available.
 
 ---
 
-# Notes
+## Notes
 
 - This method relies on NVIDIA Build's free API endpoints.
 - Only models marked with **Free Endpoints** can be used without additional cost.
